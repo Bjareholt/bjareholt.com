@@ -13,10 +13,11 @@ html, body {
 h1 {
   padding: 0;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 15px;
   text-align: center;
   font-size: 14pt;
-  color: #FFF;
+  font-family: sans;
+  color: #CCC;
 }
 
 a {
@@ -31,21 +32,23 @@ a {
 }
 
 .pickerbox {
+  padding: 0 0 5px 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 450px;
+  width: 375px;
   background: #333;
-  height: 250px;
-  border: 1px solid #888;
-  border-radius: 5px;
+  height: 260px;
+  border: 1px solid #8FF;
+  border-radius: 15px;
+  box-shadow: 0 0 30px 10px #033, 0 0 10px 5px #222 inset;
 }
 
 .choice {
   background-color: #555;
   color: #FFF;
   border: 1px solid #FFF;
-  border-radius: 5px;
-  width: 200px;
+  border-radius: 15px;
+  width: 160px;
   height: 200px;
   margin: 9px;
   opacity: 0.7;
@@ -54,11 +57,13 @@ a {
 
 .choice:hover {
   opacity: 1.0;
+  box-shadow: 0 0 10px 5px #555;
 }
 
 .logo {
-  background-color: #0F0;
+  background-color: #000;
   height: 160px;
+  border-radius: 15px 15px 0 0;
 }
 
 .title {
@@ -93,31 +98,31 @@ table.center {
     <table class=center>
       <tr>
         <td>
-        <a href="https://erik.bjareholt.com/">
-          <div class=choice>
-            <div class="logo"></div>
-            <div class=title>
-              Erik Bj&auml;reholt
+          <a href="https://erik.bjareholt.com/">
+            <div class=choice>
+              <img class=logo src="https://secure.gravatar.com/avatar/7c2fed092545e6f899545a29b557494d?s=160">
+              <div class=title>
+                Erik Bj&auml;reholt
+              </div>
+              <div class=desc>
+                erik.bjareholt.com
+              </div>
             </div>
-            <div class=desc>
-              erik.bjareholt.com
-            </div>
-          </div>
-        </a>
-      </td>
+          </a>
+        </td>
 
-      <td>
-        <a href="https://github.com/johan-bjareholt">
-          <div class=choice>
-            <div class="logo"></div>
-            <div class=title>
-              Johan Bj&auml;reholt
+        <td>
+          <a href="https://github.com/johan-bjareholt">
+            <div class=choice>
+              <img class=logo src="https://secure.gravatar.com/avatar/fcd1d9bdaa1feee2fd77396057fb8f10?s=160">
+              <div class=title>
+                Johan Bj&auml;reholt
+              </div>
+              <div class=desc>
+                github.com/johan-bjareholt
+              </div>
             </div>
-            <div class=desc>
-              github.com/johan-bjareholt
-            </div>
-          </div>
-        </a>
+          </a>
         </td>
       </tr>
     </table>
