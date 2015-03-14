@@ -8,12 +8,13 @@ html, body {
   background-color: #000;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 h1 {
   padding: 0;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 0.5em;
   text-align: center;
   font-size: 14pt;
   font-family: sans;
@@ -24,64 +25,63 @@ a {
   text-decoration: none;
 }
 
-.vertical-center {
+.content-center {
   position: absolute;
-  top: 50%;
-  margin-top: -110px;
-  width: 100%;
+  margin: auto;
+  right: 50%;
+  bottom: 50%;
+  transform: translateX(50%) translateY(50%);
 }
 
 .pickerbox {
-  padding: 0 0 5px 0;
+  padding: 1.5em;
   margin-left: auto;
   margin-right: auto;
-  width: 375px;
   background: #333;
-  height: 260px;
-  border: 1px solid #8FF;
-  border-radius: 15px;
-  box-shadow: 0 0 30px 10px #033, 0 0 10px 5px #222 inset;
+  border: 1px solid #8BF;
+  border-radius: 1em;
+  box-shadow: 0 0 2.5em 1em #024, 0 0 1em 0.5em #222 inset;
 }
 
 .choice {
   background-color: #555;
   color: #FFF;
   border: 1px solid #FFF;
-  border-radius: 15px;
-  width: 160px;
-  height: 200px;
-  margin: 9px;
+  border-radius: 1em;
+  width: 12em;
+  height: 15em;
+  margin: 1em;
   opacity: 0.7;
 }
 
 
 .choice:hover {
   opacity: 1.0;
-  box-shadow: 0 0 10px 5px #555;
+  box-shadow: 0 0 1.5em 0.5em #555;
 }
 
 .logo {
   background-color: #000;
-  height: 160px;
-  border-radius: 15px 15px 0 0;
+  height: 12em;
+  border-radius: 1.5em 1.5em 0 0;
 }
 
 .title {
-  padding: 6px;
-  padding-bottom: 0px;
+  padding: 0.5em;
+  padding-bottom: 0;
   font-weight: bold;
   text-align: center;
 }
 
 .desc {
-  padding: 0px;
+  padding: 0;
   margin-top: -3px;
   text-align: center;
   font-size: 8pt;
   opacity: 0.5;
 }
 
-table.center {
+table.table-center {
   margin-left: auto;
   margin-right: auto;
 }
@@ -90,17 +90,17 @@ table.center {
 </head>
 
 <body>
-<div class=vertical-center>
+<div class=content-center>
   <div class=pickerbox>
     <h1>Choose your destination</h1>
 
 
-    <table class=center>
+    <table class=table-center>
       <tr>
         <td>
-          <a href="https://erik.bjareholt.com/">
+          <a href="http://erik.bjareholt.com/">
             <div class=choice>
-              <img class=logo src="https://secure.gravatar.com/avatar/7c2fed092545e6f899545a29b557494d?s=160">
+              <img class=logo src="https://secure.gravatar.com/avatar/7c2fed092545e6f899545a29b557494d?s=360">
               <div class=title>
                 Erik Bj&auml;reholt
               </div>
@@ -112,14 +112,14 @@ table.center {
         </td>
 
         <td>
-          <a href="https://github.com/johan-bjareholt">
+          <a href="http://johan.bjareholt.com/">
             <div class=choice>
-              <img class=logo src="https://secure.gravatar.com/avatar/fcd1d9bdaa1feee2fd77396057fb8f10?s=160">
+              <img class=logo src="https://secure.gravatar.com/avatar/fcd1d9bdaa1feee2fd77396057fb8f10?s=360">
               <div class=title>
                 Johan Bj&auml;reholt
               </div>
               <div class=desc>
-                github.com/johan-bjareholt
+                johan.bjareholt.com
               </div>
             </div>
           </a>
